@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sukhdeepkaur.androidquiz">
+    package="com.androidquiz">
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,10 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name=".service.MyForeGroundService"
+            android:name="com.androidquiz.service.MyForeGroundService"
             android:enabled="true"
             android:exported="true" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.androidquiz.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

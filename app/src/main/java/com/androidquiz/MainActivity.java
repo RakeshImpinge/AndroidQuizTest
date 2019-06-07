@@ -1,4 +1,4 @@
-package com.example.sukhdeepkaur.androidquiz;
+package com.androidquiz;
 
 import android.app.ActivityManager;
 import android.content.Intent;
@@ -8,10 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.sukhdeepkaur.androidquiz.service.MyForeGroundService;
-
-import java.util.Iterator;
-import java.util.List;
+import com.androidquiz.service.MyForeGroundService;
 
 public class MainActivity extends AppCompatActivity {
     TextView text_production;
@@ -27,16 +24,12 @@ public class MainActivity extends AppCompatActivity {
         if (BuildConfig.FLAVOR.equals("qa")){
             text_production.setText("QA");
             Log.e("APPLICATION_ID: ",BuildConfig.FLAVOR);
-            // do what you need to do for the paid version
         } else {
             text_production.setText("PRODUCTION");
             Log.e("APPLICATION_ID: ",BuildConfig.FLAVOR);
-            // do what you need to do for the free version
         }
 
         //=====service=====
-
-
         if (isMyServiceRunning()){
 
         }
